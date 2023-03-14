@@ -78,7 +78,7 @@ class Filme extends Midia {
     private String[] diretores;
     private String produtor;
 
-    public Filme(String titulo, int ano, String genero, Ator[] atores, String[] diretores, String produtor) {
+    public Filme(String titulo, int ano, String genero, int i, Ator[] atores, String[] diretores, String produtor, String s) {
         super(titulo, ano, genero);
         this.atores = atores;
         this.diretores = diretores;

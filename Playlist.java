@@ -6,8 +6,10 @@ class Playlist {
 
     private int index;
     private int tamanho;
+    private String totalDuracao;
+    private String titulo;
 
-    public Playlist() {
+    public Playlist(String minhaPlaylist) {
         midias = new ArrayList<Midia>();
         index = 0;
     }
@@ -51,5 +53,18 @@ class Playlist {
 
     public void setTamanho(int tamanho) {
         this.tamanho = tamanho;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getTotalDuracao() {
+
+        return totalDuracao;
+    }
+
+    public ArrayList<Midia> getMidias() {
+        return midias;
     }
 }

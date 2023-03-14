@@ -1,9 +1,9 @@
 
 class Artista {
     private String nome;
-    private String dataNascimento;
-    private String premiacoes;
-    private String genero;
+    public String dataNascimento;
+    protected String premiacoes;
+    String genero;
 
     public Artista(String nome, String dataNascimento, String premiacoes, String genero) {
         this.nome = nome;
@@ -46,12 +46,13 @@ class Artista {
 }
 
 class Ator extends Artista {
-    private String formacao;
+        private String formacao;
 
     public Ator(String nome, String dataNascimento, String premiacoes, String genero, String formacao) {
         super(nome, dataNascimento, premiacoes, genero);
         this.formacao = formacao;
     }
+
 
 
     public String getFormacao() {
